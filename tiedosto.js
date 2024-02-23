@@ -1,9 +1,15 @@
-const arto = {
-  name: "Arto Hellas",
-  greet: function () {
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  greet() {
     console.log("hello, my name is", this.name);
-  },
-};
+  }
+}
 
-setTimeout(arto.greet.bind(arto), 1000);
-// sekunnin päästä tulostuu hello, my name is Arto Hellas
+const arto = new Person("Arto Hellas", 35);
+arto.greet();
+
+const juhq = new Person("Juha Tauriainen", 48);
+juhq.greet();
