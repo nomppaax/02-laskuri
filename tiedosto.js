@@ -1,7 +1,10 @@
-const sum = (p1, p2) => {
-  console.log(p1);
-  console.log(p2);
-  return p1 + p2;
+const arto = {
+  name: "Arto Hellas",
+  age: 35,
+  education: "Filosofian tohtori",
+  greet: function () {
+    console.log("hello, my name is", this.name);
+  },
 };
-const result = sum(1, 5);
-console.log(result);
+
+arto.greet(); // tulostuu hello, my name is Arto Hellas
