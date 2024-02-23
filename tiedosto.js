@@ -1,6 +1,8 @@
-const t = [1, -1, 3];
+const t = [1, 2, 3];
 
-const t2 = t.concat(5);
+const m1 = t.map((value) => value * 2);
+console.log(m1); // tulostuu [2, 4, 6]
 
-console.log(t); // tulostuu [1, -1, 3]
-console.log(t2); // tulostuu [1, -1, 3, 5]
+const m2 = t.map((value) => "<li>" + value + "</li>");
+console.log(m2);
+// tulostuu [ '<li>1</li>', '<li>2</li>', '<li>3</li>' ]
