@@ -3,6 +3,6 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/github.com/nomppaax/02-laskuri.git",
+  base: "/02-laskuri.git/",
   plugins: [react()],
 });
