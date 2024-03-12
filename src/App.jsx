@@ -1,19 +1,31 @@
 import { useState } from "react";
-const App{
-class Person {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
-  greet() {
-    console.log("hello, my name is", this.name);
-  }
-}
+const Hello = (props) => {
+  console.log(props);
+  return (
+    <div>
+      <p>
+        Hello {props.name}, you are {props.age} years old
+      </p>
+    </div>
+  );
+};
 
-const arto = new Person("Arto Hellas", 35);
-arto.greet();
+const App = () => {
+  const friends = [
+    { name: "Leevi", age: 4 },
+    { name: "Venla", age: 10 },
+  ];
 
-const juhq = new Person("Juha Tauriainen", 48);
-juhq.greet();
-}
+  return (
+    <div>
+      <p>
+        {friends[0].name} {friends[0].age}
+      </p>
+      <p>
+        {friends[1].name} {friends[1].age}
+      </p>
+    </div>
+  );
+};
+
 export default App;
